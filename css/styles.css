@@ -345,16 +345,18 @@ button {
 }
 .filter-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 72px;
+  gap: 24px;
+  margin-bottom: 72px;
+  
+  /* flex-wrap: wrap; */
 }
-.filter-item {
+/* .filter-item {
   margin-right: 24px;
 }
 .filter-item:last-child {
   margin-right: 0;
-}
+} */
 
 .filter-button {
   font-family: var(--main-font);
@@ -380,7 +382,7 @@ button {
 .filter-button:focus {
   background: #404bbf;
   border: 1px solid transparent;
-  font-family: inherit;
+  /* font-family: inherit; */
   color: var(--primary-txt--mode-light);
 }
 /*Секция портфолио*/
@@ -416,8 +418,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-txt--mode-dark);
-
-  margin-top: 32px;
+  /* margin-top: 32px; */
   margin-bottom: 8px;
 }
 
