@@ -82,6 +82,15 @@ button {
   display: flex;
   align-items: center;
 }
+
+/* НАВИГАЦИЯ */
+.nav {
+  display: flex;
+  align-items: center; 
+  text-decoration: none;
+  margin-right: 332px;
+}
+
 /* ЛОТИП */
 .logo-ferst {
   font-family: var(--secondary-font);
@@ -96,12 +105,6 @@ button {
 }
 .logo-secondary {
   color: var(--primary-txt--mode-dark);
-}
-
-/* НАВИГАЦИЯ */
-.nav {
-  text-decoration: none;
-  margin-right: 332px;
 }
 
 .nav-list {
