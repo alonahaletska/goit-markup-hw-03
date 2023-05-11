@@ -114,6 +114,7 @@ button {
 }
 
 .nav-item {
+  padding: 24px 0;
   margin-right: 40px;
 }
 .nav-item:last-child {
