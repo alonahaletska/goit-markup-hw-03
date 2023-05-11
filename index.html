@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+   <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--Касстомные стили-->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -17,7 +25,8 @@
 <body>
     <!--секция хедер-->
     <header class="header">
-        <a class="logo-ferst link" href="/index.html">WEB<span class="logo-secondary">STUDIO</span></a> 
+        <div class="header-container container">
+            <a class="logo-ferst link" href="/index.html">WEB<span class="logo-secondary">STUDIO</span></a> 
     <!--главная навигация-->
         <nav class="nav">
             <ul class="nav-list list">
@@ -30,18 +39,22 @@
             <li class="header-item"> <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
             <li class="header-item"> <a class="header-contacts link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
+        </div>
     
     </header>
     <!--Уникальный контент-->
     <main>
     <!--Секция Герой-->
-    <section class="hero">
-        <h1 class="hero-title">Effective Solutions<br> for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+    <section class="hero section">
+        <div class="container">
+            <h1 class="hero-title">Effective Solutions<br> for Your Business</h1>
+            <button class="hero-button" type="button">Order Service</button>
+        </div>
     </section>
     <!--Секция О нас-->
-    <section class="about">
-        <ul  class="about-list list">
+    <section class="about section">
+        <div class="about-container container">
+            <ul  class="about-list list">
             <li class="about-item">
                 <h3 class="about-title">Strategy</h3>
                 <p class="about-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
@@ -59,47 +72,54 @@
                 <p class="about-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
+        </div>
     </section>
 
-    <section class="work">
-        <h2 class="work-title">What are we doing</h2>
-        <ul class="work-list list">
-            <li class="work-item"><img src="./images/img1.jpg" alt="кодинг" width="370"></li>
-            <li class="work-item"><img src="./images/img2.jpg" alt="ноутбук з презентацією" width="370"></li>
-            <li class="work-item"><img src="./images/img3.jpg" alt="палітра кольорів" width="370"></li>
+    <section class="work section">
+        <div class="work-container container">
+            <h2 class="work-title">What are we doing</h2>
+            <ul class="work-list list">
+                <li class="work-item"><img src="./images/img1.jpg" alt="кодинг" width="360"></li>
+                <li class="work-item"><img src="./images/img2.jpg" alt="ноутбук з презентацією" width="360"></li>
+                <li class="work-item"><img src="./images/img3.jpg" alt="палітра кольорів" width="360"></li>
         </ul>
+        </div>
     </section>
  <!--Секция Наша команда-->
-    <section class="team">
-        <h2 class="team-title">Our Team</h2>
-        <ul class="team-list list">
-            <li class="team-item">
-                <img src="./images/img4.jpg" alt="фото Ігор Дем'яненко" width="270">
-                <h3 class="team-title-name">Mark Guerrero</h3>
-                <p class="team-text">Product Designer</p>
-            </li>
-            <li class="team-item">
-                <img src="./images/img5.jpg" alt="фото Ольга Рєпіна" width="270">
-                <h3 class="team-title-name">Tom Ford</h3>
-                <p class="team-text">Frontend Developer</p>
-            </li>
-            <li class="team-item">
-                <img src="./images/img6.jpg" alt="фото Микола Тарасов" width="270">
-                <h3 class="team-title-name">Camila Garcia</h3>
-                <p class="team-text">Marketing</p>
-            </li>
-            <li class="team-item">
-                <img src="./images/img7.jpg" alt="фото Михайло Єрмаков" width="270">
-                <h3 class="team-title-name">Daniel Wilson</h3>
-                <p class="team-text">UI Designer</p>
-            </li>
+    <section class="team section">
+        <div class="team-container container">
+            <h2 class="team-title">Our Team</h2>
+            <ul class="team-list list">
+                <li class="team-item">
+                    <img class="team-image" src="./images/img4.jpg" alt="фото Ігор Дем'яненко" width="260">
+                    <h3 class="team-title-name">Mark Guerrero</h3>
+                    <p class="team-text">Product Designer</p>
+                </li>
+                <li class="team-item">
+                    <img class="team-image" src="./images/img5.jpg" alt="фото Ольга Рєпіна" width="260">
+                    <h3 class="team-title-name">Tom Ford</h3>
+                    <p class="team-text">Frontend Developer</p>
+                </li>
+                <li class="team-item">
+                    <img class="team-image" src="./images/img6.jpg" alt="фото Микола Тарасов" width="260">
+                    <h3 class="team-title-name">Camila Garcia</h3>
+                    <p class="team-text">Marketing</p>
+                </li>
+                <li class="team-item">
+                    <img class="team-image" src="./images/img7.jpg" alt="фото Михайло Єрмаков" width="260">
+                    <h3 class="team-title-name">Daniel Wilson</h3>
+                    <p class="team-text">UI Designer</p>
+                </li>
         </ul>
+        </div>
     </section>
     </main>
     <!--Секция футер-->
     <footer class="footer">
-        <a class="footer-logo link" href="/index.html">WEB<span class="footer-logo-secondary">STUDIO</span></a> 
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <div class="container">
+            <a class="footer-logo link" href="/index.html">WEB<span class="footer-logo-secondary">STUDIO</span></a> 
+            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
 </html>
