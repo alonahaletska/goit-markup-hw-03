@@ -135,7 +135,7 @@ button {
 
 .header-list {
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 /*Контакты*/
@@ -173,7 +173,7 @@ button {
   line-height: 1.07;
   text-align: center;
   color: var(--primary-txt--mode-light);
-
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -190,6 +190,10 @@ button {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  display: block; 
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-button:hover,
@@ -201,15 +205,16 @@ button {
 .about-list {
   display: flex;
   flex-wrap: nowrap;
+  gap: 24px;
 }
 
-.about-item {
+/* .about-item {
   margin-right: 24px;
 }
 
 .about-item:last-child {
   margin-right: 0px;
-}
+} */
 
 .about-title {
   margin-bottom: 8px;
@@ -307,6 +312,9 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-txt--mode-light);
+
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-secondary {
@@ -321,7 +329,6 @@ button {
 
 .footer-text {
   width: 264px;
-  margin-top: 16px;
   color: var(--main-txt--mode-light);
 }
 
