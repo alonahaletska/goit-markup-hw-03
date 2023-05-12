@@ -403,13 +403,12 @@ img {
 }
 
 .portfolio-title { 
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-txt--mode-dark);
-  /* margin-top: 32px; */
-  margin-bottom: 8px;
 }
 
 .portfolio-text { 
@@ -417,5 +416,4 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-txt--mode-dark);
-  margin-bottom: 32px;
 }
