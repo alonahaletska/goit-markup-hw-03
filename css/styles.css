@@ -25,13 +25,12 @@
 
 /* СТИЛИ НАСЛЕДОВАНИЯ */
 body {
-  background-color: var(--primary-bg--mode-light);
-  color: var(--main-txt--mode-light);
+  /* background-color: var(--primary-bg--mode-light); */
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(-secondary-txt--mode-dark);
 }
 
 h1,
@@ -55,6 +54,7 @@ img {
 }
 
 .link {
+  color: inherit;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -90,8 +90,6 @@ button {
 .nav {
   display: flex;
   align-items: center; 
-  text-decoration: none;
-  margin-right: 332px;
 }
 
 /* ЛОТИП */
@@ -103,24 +101,21 @@ button {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--secondary-txt--mode-light);
-
   margin-right: 76px;
 }
+
 .logo-secondary {
   color: var(--primary-txt--mode-dark);
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .nav-item {
   padding: 24px 0;
-  margin-right: 40px;
-}
-.nav-item:last-child {
-  margin: 0px;
 }
 
 .nav-link {
@@ -129,7 +124,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-txt--mode-dark);
-  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -137,19 +131,16 @@ button {
   color: #404bbf;
 }
 
+.contacts{
+  font-style: normal;
+}
+
 .header-list {
   display: flex;
-  align-items: center;  
+  gap: 40px;  
 }
 
 /*Контакты*/
-.header-item {
-  margin-right: 40px;
-}
-
-.header-item:last-child {
-  margin-right: 0px;
-}
 
 .header-contacts {
   font-family: "Roboto";
@@ -157,7 +148,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
   }
 
 .header-contacts:hover,
@@ -167,11 +157,10 @@ button {
 
 /* СЕКЦИЯ ГЕРОЙ */
 .hero {
-  text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
   background: var(--secondary-bg--mode-dark);
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -183,22 +172,22 @@ button {
 }
 
 .hero-button {
-  font-family: var(--main-font);
+  display: block; 
+  min-width: 169px;
+  height: 56px;
+  border: none;
   background-color: var(--primary-bg--mode-dark);
+  border-radius: 4px;
   cursor: pointer;
+
+  font-family: var(--main-font);
   color: var(--primary-txt--mode-light);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.04em;
-  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  display: block; 
-  min-width: 169px;
-  height: 56px;
 }
 
 .hero-button:hover,
@@ -209,11 +198,10 @@ button {
 /* СЕКЦИЯ АССОЦИАЦИЙ */
 .about-list {
   display: flex;
-  flex-wrap: nowrap;
   gap: 24px;
 }
 
- .about-item {
+.about-item {
   width: calc((100% - 72px) / 4);
 }
 
@@ -235,15 +223,7 @@ button {
 }
 .work-list {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.work-item {
-  margin-right: 24px;
-}
-
-.work-item:last-child {
-  margin-right: 0px;
+  gap: 24px;
 }
 
 .work-title {
@@ -253,6 +233,10 @@ button {
   text-align: center;
   color: var(--primary-txt--mode-dark);
   text-transform: capitalize;
+}
+
+.work-item{
+  width: calc((100% - 48px) / 3);
 }
 
 .team {
@@ -272,7 +256,7 @@ button {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .team-item {
@@ -340,8 +324,6 @@ button {
   color: var(--main-txt--mode-light);
 }
 
-
-
 /*--Страница портфолио--*/
 
 /* Секция фильтр */
@@ -357,6 +339,8 @@ button {
 
 .filter-button {
   padding: 12px 24px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -371,18 +355,16 @@ button {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background: #f4f4fd;
-  border: 1px solid var(--border);
-  border-radius: 4px;
   cursor: pointer;
-  border: 1px solid var(--border);
-  
 }
+
 .filter-button:hover,
 .filter-button:focus {
   background: #404bbf;
   border: 1px solid transparent;
   color: var(--primary-txt--mode-light);
 }
+
 /*Секция портфолио*/
 .portfolio-list {
   display: flex;
@@ -402,13 +384,14 @@ button {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 } */
-.portfolio-block{
+
+.portfolio-block{ 
   padding: 32px 16px;
   border: 1px solid #e7e9fc; 
   border-top: none;
 }
 
-.portfolio-title {
+.portfolio-title { 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -418,11 +401,10 @@ button {
   margin-bottom: 8px;
 }
 
-.portfolio-text {
+.portfolio-text { 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-txt--mode-dark);
-
   margin-bottom: 32px;
 }
