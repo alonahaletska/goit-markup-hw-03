@@ -160,7 +160,10 @@ img {
 .hero {
   padding: 188px 0;
   background: var(--secondary-bg--mode-dark);
+  text-align: center;
 }
+
+
 
 .hero-title {
   font-weight: 700;
@@ -169,10 +172,12 @@ img {
   text-align: center;
   color: var(--primary-txt--mode-light);
   max-width: 496px;
+  margin: auto;
   margin-bottom: 48px;
 }
 
 .hero-button {
+  margin: auto;
   display: block; 
   min-width: 169px;
   height: 56px;
@@ -180,7 +185,6 @@ img {
   background-color: var(--primary-bg--mode-dark);
   border-radius: 4px;
   cursor: pointer;
-
   font-family: var(--main-font);
   color: var(--primary-txt--mode-light);
   font-size: 16px;
@@ -312,7 +316,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-txt--mode-light);
-
   display: inline-block;
   margin-bottom: 16px;
 }
