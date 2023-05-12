@@ -114,10 +114,6 @@ img {
   margin-right: 332px;
 }
 
-/* .nav-item {
-  padding: 24px 0;
-} */
-
 .nav-link {
   padding: 24px 0;
   font-weight: 500;
@@ -334,9 +330,7 @@ img {
   width: 264px;
   color: var(--main-txt--mode-light);
 }
-
 /*--Страница портфолио--*/
-
 /* Секция фильтр */
 .filter{
   padding: 96px 0 120px;
@@ -354,8 +348,6 @@ img {
   border-radius: 4px;
   /* font-family: var(--main-font); */
   font-weight: 500;
-  /* font-size: 16px;
-  line-height: 1.5; */
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
